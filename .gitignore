@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# FastAPI generated data
+backend/python-fastapi/messages.json
+
+# Editor and OS files
+.DS_Store
+.vscode/*.log

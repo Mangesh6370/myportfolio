@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mangesh Kumar Mahala — B.Tech CSE Fresher skilled in Java, Python, SQL, MySQL, OOP, DBMS, and Data Structures." />
+  <title>Mangesh Kumar Mahala | Software Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Interactive Particle Background -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-orb orb-1" aria-hidden="true"></div>
+  <div class="ambient-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>MKM<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark or light theme" title="Toggle Theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            Open to Entry-Level Software / IT Roles &bull; Bangalore, Karnataka
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Mangesh Kumar Mahala</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="mono-prefix">&gt;_</span>
+            <span id="typedText"></span><span class="cursor">|</span>
+          </p>
+
+          <p class="hero-description">
+            Motivated B.Tech Computer Science Engineering fresher with a Diploma in Electrical Engineering
+            and foundational knowledge of <strong>Java</strong>, <strong>Python</strong>, <strong>SQL</strong>,
+            <strong>OOP</strong>, <strong>DBMS</strong>, and <strong>Data Structures</strong>. Seeking an
+            entry-level software/IT opportunity to apply technical knowledge, learn new technologies,
+            and contribute effectively.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Get In Touch
+            </a>
+            <button class="btn btn-ghost" id="copyEmailBtn" data-email="mangeshmahala2004@gmail.com">
+              <i class="fa-regular fa-copy"></i> Copy Email
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bangalore, Karnataka</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>B.Tech CSE (2026)</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-certificate"></i>
+              <span>QSpiders Certified (Java &amp; SQL)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Multi-Language Code Card -->
+        <div class="hero-visual reveal delay-2">
+          <div class="ai-stage" id="aiStage" aria-label="Animated AI assistant graphic">
+            <div class="ai-grid" aria-hidden="true"></div>
+            <div class="orbit orbit-one" aria-hidden="true"><span></span></div>
+            <div class="orbit orbit-two" aria-hidden="true"><span></span></div>
+            <div class="orbit orbit-three" aria-hidden="true"><span></span></div>
+            <div class="ai-core" aria-hidden="true">
+              <div class="core-halo"></div>
+              <div class="core-shell">
+                <div class="robot-forehead">
+                  <span class="cosmic-core"></span>
+                  <span class="core-scan"></span>
+                </div>
+                <div class="robot-visor">
+                  <span class="robot-eye eye-left"></span>
+                  <span class="robot-eye eye-right"></span>
+                </div>
+                <div class="robot-mouth"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="floating-chip chip-java"><i class="fa-brands fa-java"></i><span>JAVA</span></div>
+            <div class="floating-chip chip-python"><i class="fa-brands fa-python"></i><span>PYTHON</span></div>
+            <div class="floating-chip chip-ai"><i class="fa-solid fa-wand-magic-sparkles"></i><span>AI READY</span></div>
+            <div class="ai-status"><span class="ai-status-dot"></span> Assistant Online</div>
+          </div>
+
+          <div class="code-window glass-card">
+            <div class="code-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="code-tabs" role="tablist">
+                <button class="code-tab active" data-lang="java" role="tab" aria-selected="true">
+                  <i class="fa-brands fa-java"></i> Developer.java
+                </button>
+                <button class="code-tab" data-lang="python" role="tab" aria-selected="false">
+                  <i class="fa-brands fa-python"></i> developer.py
+                </button>
+                <button class="code-tab" data-lang="sql" role="tab" aria-selected="false">
+                  <i class="fa-solid fa-database"></i> profile.sql
+                </button>
+              </div>
+            </div>
+
+            <div class="code-body">
+              <pre class="code-block active" id="code-java"><code><span class="kw">public class</span> <span class="cls">MangeshMahala</span> {
+    <span class="kw">String</span> name = <span class="str">"Mangesh Kumar Mahala"</span>;
+    <span class="kw">String</span> location = <span class="str">"Bangalore, Karnataka"</span>;
+    <span class="kw">String</span>[] skills = {
+        <span class="str">"Java"</span>, <span class="str">"Python"</span>, <span class="str">"SQL"</span>, <span class="str">"MySQL"</span>,
+        <span class="str">"OOP"</span>, <span class="str">"DBMS"</span>, <span class="str">"Data Structures"</span>
+    };
+
+    <span class="kw">public static void</span> <span class="fn">main</span>(<span class="kw">String</span>[] args) {
+        System.out.<span class="fn">println</span>(<span class="str">"Ready to build scalable software!"</span>);
+    }
+}</code></pre>
+
+              <pre class="code-block" id="code-python"><code><span class="kw">class</span> <span class="cls">Developer</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="str">"Mangesh Kumar Mahala"</span>
+        <span class="param">self</span>.degree = <span class="str">"B.Tech CSE (2026)"</span>
+        <span class="param">self</span>.diploma = <span class="str">"Electrical Engg (83%)"</span>
+        <span class="param">self</span>.languages = [<span class="str">"English"</span>, <span class="str">"Odia"</span>, <span class="str">"Hindi"</span>]
+        <span class="param">self</span>.fast_learner = <span class="kw">True</span>
+
+    <span class="kw">def</span> <span class="fn">status</span>(<span class="param">self</span>):
+        <span class="kw">return</span> <span class="str">"Seeking Software / IT Opportunity"</span></code></pre>
+
+              <pre class="code-block" id="code-sql"><code><span class="kw">SELECT</span> full_name, education, certifications
+<span class="kw">FROM</span> candidates
+<span class="kw">WHERE</span> full_name = <span class="str">'Mangesh Kumar Mahala'</span>
+  <span class="kw">AND</span> city = <span class="str">'Bangalore'</span>
+  <span class="kw">AND</span> skills <span class="kw">IN</span> (<span class="str">'Java'</span>, <span class="str">'Python'</span>, <span class="str">'SQL'</span>, <span class="str">'MySQL'</span>);
+
+<span class="cmt">-- Output: 1 row returned (QSpiders Certified)</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me &amp; <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            Bridging engineering discipline with modern software development fundamentals.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Profile Highlights -->
+          <div class="about-info reveal">
+            <div class="glass-card info-card">
+              <h3><i class="fa-solid fa-user-astronaut"></i> Career Objective</h3>
+              <p>
+                Motivated B.Tech Computer Science Engineering fresher with a Diploma in Electrical
+                Engineering and foundational knowledge of Java, Python, SQL, OOP, DBMS, and Data
+                Structures. Seeking an entry-level software/IT opportunity to apply technical
+                knowledge, learn new technologies, and contribute effectively to the organization.
+              </p>
+            </div>
+
+            <div class="mini-cards-grid">
+              <div class="glass-card mini-card">
+                <i class="fa-solid fa-language card-icon"></i>
+                <h4>Languages Spoken</h4>
+                <div class="tag-group">
+                  <span class="tag">English</span>
+                  <span class="tag">Odia</span>
+                  <span class="tag">Hindi</span>
+                </div>
+              </div>
+
+              <div class="glass-card mini-card">
+                <i class="fa-solid fa-people-group card-icon"></i>
+                <h4>Core Strengths</h4>
+                <div class="tag-group">
+                  <span class="tag">Fast Learner</span>
+                  <span class="tag">Teamwork</span>
+                  <span class="tag">Team Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education Timeline -->
+          <div class="timeline reveal delay-1">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-content">
+                <div class="timeline-top">
+                  <span class="timeline-year">2026</span>
+                  <span class="timeline-badge">Result Pending</span>
+                </div>
+                <h3>B.Tech – Computer Science &amp; Engineering</h3>
+                <p class="timeline-org">
+                  <i class="fa-solid fa-building-columns"></i> Synergy Institute of Technology, Nakhara, Odisha
+                </p>
+                <p class="timeline-desc">
+                  Focused on core computer science concepts including OOP, DBMS, Data Structures,
+                  and academic software engineering projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-content">
+                <div class="timeline-top">
+                  <span class="timeline-year">2023</span>
+                  <span class="timeline-badge highlight">83%</span>
+                </div>
+                <h3>Diploma – Electrical Engineering</h3>
+                <p class="timeline-org">
+                  <i class="fa-solid fa-building-columns"></i> Sudhananda
+                </p>
+                <p class="timeline-desc">
+                  Built strong analytical, logical troubleshooting, and technical engineering foundations.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-content">
+                <div class="timeline-top">
+                  <span class="timeline-year">10th Std</span>
+                  <span class="timeline-badge">56%</span>
+                </div>
+                <h3>10th Standard</h3>
+                <p class="timeline-org">
+                  <i class="fa-solid fa-school"></i> Hi-Tech Public School, Odisha
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical &amp; <span class="gradient-text">Soft Skills</span></h2>
+          <p class="section-subtitle">
+            Technologies, computer science fundamentals, and collaboration strengths.
+          </p>
+        </div>
+
+        <!-- Skill Filter Tabs -->
+        <div class="filter-bar reveal" role="tablist" aria-label="Skill categories">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="concepts">Core Concepts</button>
+          <button class="filter-btn" data-filter="db-tools">Database &amp; Tools</button>
+          <button class="filter-btn" data-filter="soft">Soft Skills</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Programming -->
+          <div class="glass-card skill-card reveal" data-category="programming">
+            <div class="skill-head">
+              <div class="skill-icon java"><i class="fa-brands fa-java"></i></div>
+              <div>
+                <h3>Java</h3>
+                <span class="skill-cat">Programming</span>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="programming">
+            <div class="skill-head">
+              <div class="skill-icon python"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h3>Python</h3>
+                <span class="skill-cat">Programming</span>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="programming">
+            <div class="skill-head">
+              <div class="skill-icon sql"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h3>SQL</h3>
+                <span class="skill-cat">Programming</span>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="glass-card skill-card reveal" data-category="concepts">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+              <div>
+                <h3>OOP</h3>
+                <span class="skill-cat">Core Concepts</span>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="concepts">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+              <div>
+                <h3>DBMS</h3>
+                <span class="skill-cat">Core Concepts</span>
+              </div>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="82%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="concepts">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div>
+                <h3>Data Structures</h3>
+                <span class="skill-cat">Core Concepts</span>
+              </div>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="78%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="concepts">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Software Dev Fundamentals</h3>
+                <span class="skill-cat">Core Concepts</span>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="80%"></div>
+            </div>
+          </div>
+
+          <!-- Database & Tools -->
+          <div class="glass-card skill-card reveal" data-category="db-tools">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-table"></i></div>
+              <div>
+                <h3>MySQL</h3>
+                <span class="skill-cat">Database</span>
+              </div>
+              <span class="skill-pct">84%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="84%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="db-tools">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <div>
+                <h3>Git (Basic)</h3>
+                <span class="skill-cat">Tools</span>
+              </div>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="70%"></div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-card reveal" data-category="db-tools">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-file-lines"></i></div>
+              <div>
+                <h3>MS Office</h3>
+                <span class="skill-cat">Tools</span>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="glass-card skill-card soft-skills-card reveal" data-category="soft">
+            <div class="skill-head">
+              <div class="skill-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <h3>Soft Skills</h3>
+                <span class="skill-cat">Interpersonal &amp; Work Ethic</span>
+              </div>
+            </div>
+            <div class="soft-pills">
+              <span class="soft-pill"><i class="fa-solid fa-comments"></i> Communication</span>
+              <span class="soft-pill"><i class="fa-solid fa-users"></i> Teamwork</span>
+              <span class="soft-pill"><i class="fa-solid fa-sitemap"></i> Team Management</span>
+              <span class="soft-pill"><i class="fa-solid fa-clock"></i> Time Management</span>
+              <span class="soft-pill"><i class="fa-solid fa-bolt"></i> Fast Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Academic software projects demonstrating database design, coding fundamentals, and collaboration.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="glass-card project-card reveal">
+            <div class="project-banner banner-1">
+              <div class="project-banner-icon">
+                <i class="fa-solid fa-hospital-user"></i>
+              </div>
+              <span class="project-type">Academic Project</span>
+            </div>
+            <div class="project-body">
+              <h3>Hospital Management System</h3>
+              <p class="project-summary">
+                Academic project focused on managing hospital-related information and daily operations
+                through structured database and software engineering principles.
+              </p>
+              <ul class="project-points">
+                <li>Organized and managed structured data related to hospital activities.</li>
+                <li>Applied core software development and relational database (DBMS) concepts.</li>
+                <li>Designed clean workflows for information handling and record management.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>SQL / MySQL</span>
+                <span>DBMS</span>
+                <span>OOP</span>
+              </div>
+              <div class="project-links">
+                <!-- Replace # with your actual GitHub repository URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass-card project-card reveal delay-1">
+            <div class="project-banner banner-2">
+              <div class="project-banner-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="project-type">B.Tech Curriculum Project</span>
+            </div>
+            <div class="project-body">
+              <h3>Model Sweep</h3>
+              <p class="project-summary">
+                Developed as part of the B.Tech Computer Science &amp; Engineering academic curriculum
+                with a focus on structured implementation and collaborative teamwork.
+              </p>
+              <ul class="project-points">
+                <li>Participated actively in project development, implementation, and teamwork.</li>
+                <li>Applied foundational software development concepts to deliver project goals.</li>
+                <li>Collaborated with peers across planning, coding, and testing stages.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Software Dev</span>
+                <span>Data Structures</span>
+                <span>Teamwork</span>
+              </div>
+              <div class="project-links">
+                <!-- Replace # with your actual GitHub repository URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+        </div>
+
+        <div class="certs-grid">
+          <div class="glass-card cert-card reveal">
+            <div class="cert-icon java">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">QSpiders</span>
+              <h3>Java Certification</h3>
+              <p>Verified training and certification in core Java programming and object-oriented principles.</p>
+            </div>
+            <div class="cert-badge" title="Verified Certification">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card reveal delay-1">
+            <div class="cert-icon sql">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">QSpiders</span>
+              <h3>SQL Certification</h3>
+              <p>Verified training and certification in SQL querying, relational database management, and MySQL.</p>
+            </div>
+            <div class="cert-badge" title="Verified Certification">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Looking for an enthusiastic entry-level software/IT developer? Reach out directly!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a href="mailto:mangeshmahala2004@gmail.com" class="glass-card contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <strong>mangeshmahala2004@gmail.com</strong>
+              </div>
+            </a>
+
+            <a href="tel:+916370729464" class="glass-card contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <strong>+91 6370729464</strong>
+              </div>
+            </a>
+
+            <div class="glass-card contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <strong>Bangalore, Karnataka, India</strong>
+              </div>
+            </div>
+          </div>
+
+          <form class="glass-card contact-form reveal delay-1" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Recruiter Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Entry-Level Software Developer Opportunity" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note">
+              Works instantly via email client, or connect to the included Python FastAPI / Java Spring Boot backend.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> <strong>Mangesh Kumar Mahala</strong>. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="mailto:mangeshmahala2004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+916370729464" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://github.com/Mangesh6370" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mangeshkumarmahala" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
