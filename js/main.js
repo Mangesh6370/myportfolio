@@ -315,3 +315,16 @@ From: ${name} (${email})`)}`;
     animate();
   }
 });
+// Glowing Mouse Cursor
+document.addEventListener("DOMContentLoaded", () => {
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+
+    const cursorGlow = document.createElement("div");
+    cursorGlow.className = "cursor-glow";
+    document.body.appendChild(cursorGlow);
+
+    document.addEventListener("mousemove", (e) => {
+        cursorGlow.style.left = `${e.clientX}px`;
+        cursorGlow.style.top = `${e.clientY}px`;
+    });
+});

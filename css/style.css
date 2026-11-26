@@ -1584,3 +1584,22 @@ ul {
     padding: 72px 0;
   }
 }
+/* Glowing Mouse Cursor */
+.cursor-glow {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #00e5ff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+@media (pointer: coarse) {
+    .cursor-glow {
+        display: none;
+    }
+}
